@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <stdbool.h>
 #include <time.h>
 #include <math.h>
 #define SAMPLE_NUM 1000000007

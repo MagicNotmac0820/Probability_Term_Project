@@ -1,14 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <assert.h>
-#include <limits.h>
+#include <time.h>
 #include <math.h>
-#define SAMPLE_NUM 100000
-#define DIVISION (-log(1.0-rand()/(RAND_MAX+1.0)))
-
-int p[21] = {0} ;
+#define SAMPLE_NUM 1000000007
+#define ADDEND (-log(1.0-rand()/(RAND_MAX+1.0)))
+#define TIME_UPPERBOUND 7.5
 
 int main(void){
-    
+    int result[21] = {0} ;
+    int64_t totalCount = 0 ;
+    srand(time(NULL)) ;
+
+    for( int i = 1 ; i <= SAMPLE_NUM ; ++i ){
+        int32_t count = -1 ;
+        double sum = 0 ;
+
+        do{
+            sum += ADDEND ;
+            ++count ;
+        }while( sum <= TIME_UPPERBOUND ) ;
+
+        if( count >= 0 && count < 21 )
+            result[count]++ ;
+        totalCount += count ;
+    }
+
+    for( int i = 0 ; i < 21 ; ++i )
+        printf("%d ", result[i] ) ;
+    printf("\n") ;
+
+    printf("The expected value: %f\n", (double)totalCount / SAMPLE_NUM ) ;
+
+    return EXIT_SUCCESS ;
 }
