@@ -28,7 +28,7 @@ int main(void){
 
     printf("The distribution: \n") ;
     for( int i = 0 ; i < 21 ; ++i )
-        printf("P_X(%d) = %d\n", i , result[i] ) ;
+        printf("P_X(%d) = %f\n", i , (double)result[i] / (double)SAMPLE_NUM ) ;
 
     printf("The expected value: %f\n", (double)totalCount / (double)SAMPLE_NUM ) ;
 
