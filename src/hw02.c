@@ -47,8 +47,8 @@ int main(void){
         count = 0 ;
     }
 
-    printf("The expectation with p=0.4: %f\n", (double)result1 / (double)SAMPLE_NUM ) ;
-    printf("The expectation with p=0.4325603: %f\n", (double)result2 / (double)SAMPLE_NUM ) ;
-    printf("The expectation with p=0.45: %f\n", (double)result3 / (double)SAMPLE_NUM ) ;
+    printf("The expectation with p=0.4: %20f\n", (double)result1 / (double)SAMPLE_NUM ) ;
+    printf("The expectation with p=0.4325603: %14f\n", (double)result2 / (double)SAMPLE_NUM ) ;
+    printf("The expectation with p=0.45: %19f\n", (double)result3 / (double)SAMPLE_NUM ) ;
     return EXIT_SUCCESS ;
 }
