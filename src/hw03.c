@@ -4,7 +4,6 @@
 #include <time.h>
 #include <math.h>
 #define SAMPLE_NUM 1000000007
-// #define SAMPLE_NUM 1000000
 #define ADDEND (-log(1.0-rand()/(RAND_MAX+1.0)))
 #define TIME_UPPERBOUND 7.5
 
