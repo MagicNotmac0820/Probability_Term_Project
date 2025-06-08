@@ -12,11 +12,7 @@
     Poisson: inter-arrival times are iid exponential random variables.  
     Arrival rate $\lambda$; i.e. exponential random variables with mean $\dfrac{1}{\lambda}$  
     $\alpha = \lambda T$, $T$ = the total interval. Let $\lambda = 1, T = 7.5$.  
-    $\begin{aligned}
-        \text{(-log(1.0 - rand()/(\text{RAND\_MAX}+1.0)) -}\\
-        \text{log(1.0 - rand()/(\text{RAND\_MAX}+1.0)) -}\\
-        \text{log(1.0 - rand()/(\text{RAND\_MAX}+1.0))...)}
-    \end{aligned}$  
+    ![image](https://github.com/user-attachments/assets/3dbd31a6-e354-4674-a3b1-0fb41d5d3bf4)  
     until the sum is greater than $T = 7.5$.  
     $\text{X}$ = the number of the arrivals during the interval $T$. Plot the $\text{PMF}$ $P_X(x)$ and the simulation result of $\text{X}$ for $x = 0,1,...,20$.
 ### Problem 4
