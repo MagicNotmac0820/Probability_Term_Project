@@ -3,7 +3,8 @@
 #include <stdint.h>
 #include <time.h>
 #include <math.h>
-#define SAMPLE_NUM 1000000007
+// #define SAMPLE_NUM 1000000007
+#define SAMPLE_NUM 1000000
 #define ADDEND (-log(1.0-rand()/(RAND_MAX+1.0)))
 #define TIME_UPPERBOUND 7.5
 
@@ -26,11 +27,11 @@ int main(void){
         totalCount += count ;
     }
 
+    printf("The distribution: \n") ;
     for( int i = 0 ; i < 21 ; ++i )
-        printf("%d ", result[i] ) ;
-    printf("\n") ;
+        printf("P_X(%d) = %d\n", i , result[i] ) ;
 
-    printf("The expected value: %f\n", (double)totalCount / SAMPLE_NUM ) ;
+    printf("The expected value: %f\n", (double)totalCount / (double)SAMPLE_NUM ) ;
 
     return EXIT_SUCCESS ;
 }
