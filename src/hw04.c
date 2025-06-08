@@ -4,7 +4,6 @@
 #include <math.h>
 #include <time.h>
 #define SAMPLE_NUM 1000000007
-// #define SAMPLE_NUM 1000000
 #define ADDEND ( rand() / (RAND_MAX/8.0) - 4.0 )
 
 int main(void){
