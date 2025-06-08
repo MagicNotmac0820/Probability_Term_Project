@@ -22,5 +22,5 @@
 ### Problem 4
 * **Description**:  
     $U_1,U_2,...,U_{12}(\text{rand()/(RAND\_MAX/8.0) - 4.0})$ are iid uniform random variables with the $\text{PDF}$  
-    ![image](https://github.com/user-attachments/assets/83a1b803-0cdb-405b-9b78-feb38e053c9b)  
+    ![image](https://github.com/user-attachments/assets/9408fdbf-590c-47a3-8149-a4b2cb944417)
     $\text{E[U]} = 0$ and $\text{Var[U]} = \dfrac{64}{12}$. $Y = U_1 + U_2 + ... + U_{12}$. By $\text{CLT}$, $Y$ is close to $\text{Gaussian(0,8)}$. Write a program in C/C++ to find the $\text{PDF}$ $f_Y(y)$. Plot $f_Y(y)$ and the $\text{PDF}$ of $X\sim \text{Gaussian(0,8)}$ on $[-35,35]$ in one single figure with $\text{MATLAB}$. Specify the curves.
